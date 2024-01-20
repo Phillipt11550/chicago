@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Web Project</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <img src="images/UndertheWaveoffKanagawa.webp" alt="nav art">
+        <h1>Cryptocurrency To The Max</h1>
+    </header>
+
+    <main id="main-content-1">
+        <div class="gallery" onclick="openModal('Bitcoin List', 'Hello! This is the Bitcoin List.')">
+            <!-- Add more gallery images -->
+            <img src="images/OIP.jpeg" alt="Bitcoin List">
+            <img src="images/OIP (1).jpeg" alt="Painting 1">
+            <img src="images/OIP (2).jpeg" alt="Painting 2">
+            <!-- Add more images/OIP (1).jpegimages as needed -->
+        </div>
+    </main>
+
+    <main id="main-content-2">
+        <div class="gallery" onclick="openModal('New Art', 'Greetings! This is a new piece of art.')">
+            <!-- Add more gallery images -->
+            <img src="images/picart.webp" alt="New Art">
+            <img src="images/VirtualArtGallery.webp" alt="Painting 3">
+            <img src="images/Waterlilies.webp" alt="Painting 4">
+            <!-- Add more images as needed -->
+        </div>
+    </main>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalText"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
